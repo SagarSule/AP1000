@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<widget 
+	xmlns="http://www.w3.org/ns/widgets" 
+	xmlns:gap="http://phonegap.com/ns/1.0" 
+	xmlns:android="http://schemas.android.com/apk/mobione/android"
+	id="aakararts.ap1000small" 
+	version="1.0.0">
+    
+    <name>AP1000</name>
+    <description>
+        iPad mini App for operating AP1000 Reactor Building and TurbineBuilding Model.
+		Client : Westinghouse Electric India LLC.
+		(c) Aakar Arts 2015
+    </description>
+    <author email="sagar@aakararts.com" href="http://www.aakararts.com">
+        Sagar Sule
+    </author>
+    
+    <!-- Either rename your prj startup html file to index.html or replace index.html below
+         with the name of your project startup html file 
+    -->
+    <content src="AP1000_small.html"/>
+    
+    <!-- Uncomment and edit to specify a specific phonegap version 
+         otherwise use PhoneGap Build will use the most recent version 
+    -->
+    <!-- <preference name="phonegap-version" value="3.5.0"/> -->
+    
+	<preference name="StatusBarOverlaysWebView" value="false"/> 
+	<preference name="StatusBarBackgroundColor" value="#000000"/>
+	<preference name="StatusBarStyle" value="lightcontent"/>
+    <!-- <preference name="ios-statusbarstyle" value="black-opaque"/> -->
+        
+     <!-- For a descripton of preferences see 
+     	  http://docs.build.phonegap.com/en_US/configuring_preferences.md.html#Preferences 
+     -->
+    <preference name="permissions" value="none"/>
+    <preference name="orientation" value="landscape"/>
+    <preference name="target-device" value="tablet"/>
+    <preference name="fullscreen" value="true"/> <!-- set false to show android statusbar -->
+    <preference name="webviewbounce" value="true"/>
+    <preference name="prerendered-icon" value="true"/>
+    <preference name="stay-in-webview" value="false"/>
+    <preference name="detect-data-types" value="true"/>
+    <preference name="exit-on-suspend" value="true"/>
+    <preference name="show-splash-screen-spinner" value="true"/>
+    <preference name="SplashScreen" value="screen" />
+ 	<preference name="SplashScreenDelay" value="5000" />
+    <!-- <preference name="auto-hide-splash-screen" value="true"/> -->    
+    <preference name="disable-cursor" value="false"/>
+    <preference name="android-minSdkVersion" value="7"/>
+    <preference name="android-installLocation" value="auto"/>
+        
+    <!-- Core cordova/phonegap plugins -->
+    <gap:plugin name="org.apache.cordova.battery-status"/>
+    <gap:plugin name="org.apache.cordova.camera"/>
+    <gap:plugin name="org.apache.cordova.media-capture"/>
+    <gap:plugin name="org.apache.cordova.console"/>
+    <gap:plugin name="org.apache.cordova.contacts"/>
+    <gap:plugin name="org.apache.cordova.device"/>
+    <gap:plugin name="org.apache.cordova.device-motion"/>
+    <gap:plugin name="org.apache.cordova.device-orientation"/>
+    <gap:plugin name="org.apache.cordova.dialogs"/>
+    <gap:plugin name="org.apache.cordova.file"/>
+    <gap:plugin name="org.apache.cordova.file-transfer"/>
+    <gap:plugin name="org.apache.cordova.geolocation"/>
+    <gap:plugin name="org.apache.cordova.globalization"/>
+    <gap:plugin name="org.apache.cordova.inappbrowser"/>
+    <gap:plugin name="org.apache.cordova.media"/>
+    <gap:plugin name="org.apache.cordova.network-information"/>
+    <gap:plugin name="org.apache.cordova.splashscreen"/>
+    <gap:plugin name="org.apache.cordova.vibration"/>
+    
+    <!-- MobiOne plugins  -->
+    <gap:plugin name="com.badrit.emailcomposer"/>
+    <gap:plugin name="com.genuitec.mobione.phoneui"/>
+    <gap:plugin name="com.phonegap.plugins.childbrowser"/>
+    <gap:plugin name="org.apache.cordova.statusbar"/>
+    
+	<!-- Default app icon appearing on device homescreen -->    
+    <icon src="www/icon.png"/>
+
+	<!-- Android app branding artwork -->
+    <icon gap:platform="android" gap:qualifier="ldpi" src="www/icon.png"/>
+    <icon gap:platform="android" gap:qualifier="mdpi" src="www/icon.png"/>
+    <icon gap:platform="android" gap:qualifier="hdpi" src="www/icon.png"/>
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/icon.png"/>
+    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="www/screen.png"/>
+    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="www/screen.png"/>
+    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="www/screen.png"/>
+    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="www/screen.png"/>
+
+
+	<!-- iOS app branding artwork -->
+    <icon gap:platform="ios" width="57"  height="57"  src="www/images/icon-57.png"/>
+    <icon gap:platform="ios" width="72"  height="72"  src="www/images/icon-72.png"/>
+    <icon gap:platform="ios" width="114" height="114" src="www/images/icon-57-2x.png"/>
+    <icon gap:platform="ios" width="144" height="144" src="www/images/icon-72-2x.png"/>
+    <gap:splash gap:platform="ios" width="320"  height="480"  src="www/images/screen-iphone-portrait.png"/>
+    <gap:splash gap:platform="ios" width="640"  height="960"  src="www/images/screen-iphone-portrait-2x.png"/>
+    <gap:splash gap:platform="ios" width="640"  height="1136" src="www/images/screen-iphone-portrait-568h-2x.png"/>
+    <gap:splash gap:platform="ios" width="768"  height="1024" src="www/images/screen-ipad-portrait.png"/>
+    <gap:splash gap:platform="ios" width="1024" height="768"  src="www/images/screen-ipad-landscape.png"/>
+
+	<!-- Whitelist of urls this app may open in an InAppBrowser -->
+    <access origin="*"/>
+    
+    <!-- Configure remote debugging on Android 4.4 & greater.                     -->
+    <!--  Overrides MyEclipse Build dialog's debug mode.                          -->
+    <!-- Set android:debuggable="true" to enable remote debugging.                -->
+    <!-- Set android:debuggable="false" or remove element for production release. -->
+    <!-- 
+    <gap:config-file parent="/manifest" platform="android">
+    	 <application android:debuggable="false"/>
+	</gap:config-file>
+	-->
+    <icon height="76" gap:platform="ios" width="76" src="www/images/icon-72.png"/>
+    <icon height="152" gap:platform="ios" width="152" src="www/images/icon-72-2x.png"/>
+    <preference name="phonegap-version" value="3.5.0"/>
+    <gap:splash src="www/screen.png"/>
+    <gap:splash gap:platform="android" gap:density="ldpi" src="www/screen.png"/>
+    <gap:splash gap:platform="android" gap:density="mdpi" src="www/screen.png"/>
+    <gap:splash gap:platform="android" gap:density="hdpi" src="www/screen.png"/>
+    <gap:splash gap:platform="android" gap:density="xhdpi" src="www/screen.png"/>
+    <gap:splash height="2048" gap:platform="ios" width="1536" src="www/images/screen-ipad-portrait-2x.png"/>
+    <gap:splash height="1536" gap:platform="ios" width="2048" src="www/images/screen-ipad-landscape-2x.png"/>
+    <gap:platform name="android"/>
+    <gap:platform name="ios"/>
+    <preference name="orientation" value="landscape"/>
+    <preference name="target-device" value="tablet"/>
+    <preference name="prerendered-icon" value="true"/>
+    <preference name="exit-on-suspend" value="true"/>
+    <preference name="deployment-target" value="7.0"/>
+    <preference name="android-installLocation" value="internalOnly"/>
+    <preference name="splash-screen-duration" value="5000"/>
+    <preference name="android-minSdkVersion" value="7"/>
+    <preference name="android-maxSdkVersion" value="19"/>
+    <preference name="android-targetSdkVersion" value="19"/>
+	
+</widget>
