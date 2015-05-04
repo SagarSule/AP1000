@@ -55,6 +55,7 @@ phoneui.postOrientationChange = function(newOrientation) {
  * Called when document is loaded.
  */
 phoneui.documentReadyHandler = function() {
+	$.get(url + "?Stop=0", function(data,status){});
 	$('#m1-AP1000_small-AP1000').css({'background-image': 'linear-gradient(to top, #ff8000 0%,  #ff8000 49.9%, #F68B20 50%, #F9AF64 100%)'}); //ORANGE
 	$('#m1-AP1000_small-NuclearIsland').css({'background-image': 'linear-gradient(to top, #804000 0%,  #804000 49.9%, #924B05 50%, #D76F07 100%)'}); //BROWN
 	$('#m1-AP1000_small-Systems').css({'background-image': 'linear-gradient(to top, #804000 0%,  #804000 49.9%, #924B05 50%, #D76F07 100%)'}); //BROWN
@@ -63,6 +64,14 @@ phoneui.documentReadyHandler = function() {
 	$('#m1-AP1000_small-Abbreviations').css({'background-image': 'linear-gradient(to top, #804000 0%,  #804000 49.9%, #924B05 50%, #D76F07 100%)'}); //BROWN
 	allOff();
 	
+}
+
+document.addEventListener("pause", onPause, false);
+
+function onPause() {
+    // Handle the pause event
+	$.get(url + "?Stop=0", function(data,status){});
+
 }
 
 function allOff()

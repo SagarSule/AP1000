@@ -241,19 +241,12 @@
 }
 
 .m1-background-10{
-  -webkit-background-size: 100%;
-  background-color: rgba(0,0,0,0);
-  background-image: url(images/video1.png);
-  background-repeat: no-repeat;
-}
-
-.m1-background-11{
   background-color: rgba(0,0,0,0);
   background-image: 
     -webkit-gradient(linear, 50.0% 0.0%, 50.0% 100.0%, from(rgb(128,128,128)), to(rgb(0,0,0)));
 }
 
-.m1-clicked.m1-button.m1-background-12{
+.m1-clicked.m1-button.m1-background-11{
   background-color: rgba(0,0,0,0);
   background-image: 
     -webkit-gradient(linear, 50.0% 0.0%, 50.0% 100.0%, from(rgb(192,192,192)), to(rgb(128,128,128)));
