@@ -63,22 +63,7 @@ phoneui.documentReadyHandler = function() {
 	$('#m1-AP1000_small-AccidentMitigation').css({'background-image': 'linear-gradient(to top, #804000 0%,  #804000 49.9%, #924B05 50%, #D76F07 100%)'}); //BROWN
 	$('#m1-AP1000_small-Abbreviations').css({'background-image': 'linear-gradient(to top, #804000 0%,  #804000 49.9%, #924B05 50%, #D76F07 100%)'}); //BROWN
 	allOff();
-	document.addEventListener("pause", onPause, false);
-	document.addEventListener("resign", onResign, false);
 	
-}
-
-function onResign() {
-    // Handle the pause event
-	$.get(url + "?Stop=0", function(data,status){});
-
-}
-
-
-function onPause() {
-    // Handle the pause event
-	$.get(url + "?Stop=0", function(data,status){});
-
 }
 
 function allOff()
