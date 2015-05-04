@@ -70,10 +70,6 @@
   vertical-align: middle;
 }
 
-.m1-video-container{
-  background-color: rgb(0,0,0);
-}
-
 .m1-iscroll-wrapper{
   overflow: hidden;
 }
@@ -144,16 +140,6 @@
   width: auto;
 }
 
-.m1-video-container > .m1-play-button{
-  background-image: url(res/images/playVideoBtn.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.m1-video-container[poster]{
-  background-color: rgba(0,0,0,0);
-}
-
 .m1-background-1{
   background-color: rgb(255,255,255);
   background-image: none;
@@ -215,6 +201,12 @@
     -webkit-gradient(linear, 50.0% 0.0, 50.0% 100.0%, from(rgb(71,248,71)), to(rgb(0,225,0)), color-stop(0.499,rgb(8,240,8)), color-stop(0.501,rgb(0,225,0)));
 }
 
+.m1-clicked.m1-button.m1-background-8{
+  background-color: rgba(0,0,0,0);
+  background-image: 
+    -webkit-gradient(linear, 50.0% 0.0, 50.0% 100.0%, from(rgb(7,215,7)), to(rgb(0,128,0)), color-stop(0.499,rgb(5,146,5)), color-stop(0.501,rgb(0,128,0)));
+}
+
 .m1-font-2{
   color: rgb(0,0,0);
   font-family: Helvetica;
@@ -249,28 +241,22 @@
 }
 
 .m1-background-10{
-  background-color: rgba(0,0,0,0);
-  background-image: 
-    -webkit-gradient(linear, 50.0% 0.0%, 50.0% 100.0%, from(rgb(128,128,128)), to(rgb(0,0,0)));
-}
-
-.m1-clicked.m1-button.m1-background-11{
-  background-color: rgba(0,0,0,0);
-  background-image: 
-    -webkit-gradient(linear, 50.0% 0.0%, 50.0% 100.0%, from(rgb(192,192,192)), to(rgb(128,128,128)));
-}
-
-.m1-background-12{
   -webkit-background-size: 100%;
   background-color: rgba(0,0,0,0);
   background-image: url(images/video1.png);
   background-repeat: no-repeat;
 }
 
-.m1-background-13,.m1-clicked.m1-button.m1-background-8{
+.m1-background-11{
   background-color: rgba(0,0,0,0);
   background-image: 
-    -webkit-gradient(linear, 50.0% 0.0, 50.0% 100.0%, from(rgb(7,215,7)), to(rgb(0,128,0)), color-stop(0.499,rgb(5,146,5)), color-stop(0.501,rgb(0,128,0)));
+    -webkit-gradient(linear, 50.0% 0.0%, 50.0% 100.0%, from(rgb(128,128,128)), to(rgb(0,0,0)));
+}
+
+.m1-clicked.m1-button.m1-background-12{
+  background-color: rgba(0,0,0,0);
+  background-image: 
+    -webkit-gradient(linear, 50.0% 0.0%, 50.0% 100.0%, from(rgb(192,192,192)), to(rgb(128,128,128)));
 }
 
 body{
@@ -286,76 +272,13 @@ body{
   left: 994px;
   line-height: 30px;
   text-align: center;
-  top: -688px;
+  top: -658px;
   width: 30px;
 }
 
 #m1-AP1000_small-html2{
   height: 688px;
   left: 0px;
-  top: 30px;
-  width: 1024px;
-}
-
-#m1-AP1000_small-Video1-box{
-  height: 748px;
-  left: 0px;
-  line-height: 748px;
-  margin-right: 0px;
-  top: 0px;
-  width: auto;
-}
-
-#m1-AP1000_small-Video1{
-  height: 100.0%;
-  left: 0px;
-  top: 0px;
-  width: 100.0%;
-}
-
-#m1-AP1000_small-back{
-  -webkit-border-radius: 4px;
-  border-top-color: transparent;
-  border-width: 1px 0px 0px 0px;
-  height: 30px;
-  line-height: 30px;
-  margin-left: auto;
-  right: 0px;
-  text-align: center;
-  top: -688px;
-  width: 30px;
-}
-
-#m1-AP1000_small-video-player{
-  height: 72px;
-  left: 476px;
-  top: -1068px;
-  width: 72px;
-}
-
-#m1-AP1000_small-video-shadow{
-  border-top-color: transparent;
-  border-width: 1px 0px 0px 0px;
-  height: 688px;
-  left: 0px;
-  margin-right: 0px;
-  top: -688px;
-  width: auto;
-}
-
-#m1-AP1000_small-video-poster{
-  border-top-color: transparent;
-  border-width: 1px 0px 0px 0px;
-  height: 688px;
-  left: 0px;
-  top: 0px;
-  width: 1024px;
-}
-
-#m1-AP1000_small-video-container{
-  height: 688px;
-  left: 0px;
-  line-height: 688px;
   top: 30px;
   width: 1024px;
 }
