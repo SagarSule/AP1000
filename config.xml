@@ -74,23 +74,19 @@
     <gap:plugin name="org.apache.cordova.statusbar"/>
     
 	<!-- Default app icon appearing on device homescreen -->    
-    <icon src="icon.png"/>
+    <icon src="images/icon.png"/>
 
 	<!-- Android app branding artwork -->
 
 	<!-- iOS app branding artwork -->
-    <icon gap:platform="ios" width="144" height="144" src="icon.png"/>
+    <icon gap:platform="ios" width="144" height="144" src="images/icon.png"/>
     <!-- iPad -->
-	<icon src="icon.png" gap:platform="ios" width="76" height="76" />
-	<icon src="icon.png" gap:platform="ios" width="152" height="152" />
+	<icon src="images/icon.png" gap:platform="ios" width="76" height="76" />
+	<icon src="images/icon.png" gap:platform="ios" width="152" height="152" />
 
     <!-- iPad -->
-	<gap:splash src="screen.png" gap:platform="ios" width="768" height="1024" />
-	<gap:splash src="screen.png" gap:platform="ios" width="1024" height="768" />
 
 	<!-- Retina iPad -->
-	<gap:splash src="screen.png" gap:platform="ios" width="1536" height="2048" />
-	<gap:splash src="screen.png" gap:platform="ios" width="2048" height="1536" />
 
 	<!-- Whitelist of urls this app may open in an InAppBrowser -->
     <access origin="*"/>
@@ -107,6 +103,10 @@
     <gap:platform name="ios"/>
     <preference name="phonegap-version" value="3.6.3"/>
     <preference name="deployment-target" value="7.0"/>
-    <gap:splash src="screen.png"/>
+    <gap:splash height="1024" gap:platform="ios" width="768" src="images/screen.png"/>
+    <gap:splash height="768" gap:platform="ios" width="1024" src="images/screen.png"/>
+    <gap:splash height="2048" gap:platform="ios" width="1536" src="images/screen.png"/>
+    <gap:splash height="1536" gap:platform="ios" width="2048" src="images/screen.png"/>
+    <gap:splash src="images/screen.png"/>
 	
 </widget>
