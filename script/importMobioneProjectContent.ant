@@ -1,5 +1,5 @@
 <!-- 
-version: 0.1.5
+version: 0.1.3
 
 Purpose: Import the contents of a MobiOne project into a MyEclipse PhoneGap project
 -->
@@ -51,18 +51,10 @@ Purpose: Import the contents of a MobiOne project into a MyEclipse PhoneGap proj
 		<replace file="${myeclipseProjectWWWDir}/${mobioneProjectHTMLStartupFile}"
 			token="minimal-ui,"  value="" />	
 		
-		<!-- upgrade config.xml in old Cordova project, project/www dir -->
 		<replaceregexp file="${myeclipseProjectWWWDir}/config.xml"
 		               match="\&lt;content\s*.*"
 		               replace="\&lt;content src=\&quot;${mobioneProjectHTMLStartupFile}\&quot;/\&gt;"
 		               byline="true"
-		/>
-		
-		<!-- upgrade config.xml for new Cordova project in root dir -->
-		<replaceregexp file="${myeclipseProjectDir}/config.xml"
-				               match="\&lt;content\s*.*"
-				               replace="\&lt;content src=\&quot;${mobioneProjectHTMLStartupFile}\&quot;/\&gt;"
-				               byline="true"
 		/>
 
 		<!-- remove junk files included by ME CI7 prj template, bug --> 

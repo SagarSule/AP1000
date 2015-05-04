@@ -3,19 +3,21 @@
 	xmlns="http://www.w3.org/ns/widgets" 
 	xmlns:gap="http://phonegap.com/ns/1.0" 
 	xmlns:android="http://schemas.android.com/apk/mobione/android"
-	id="nugen.aakararts" 
+	id="aakararts.ap1000small" 
 	version="1.0.0">
     
     <name>AP1000</name>
     <description>iPad mini App for operating AP1000 Reactor Building and TurbineBuilding Model.
 		Client : NuGEN.
 		(c) Aakar Arts 2015</description>
-    <author email="sagar@aakararts.com" href="http://www.aakararts.com">Sagar Sule</author>
+    <author email="sagar@aakararts.com" href="http://www.aakararts.com">
+        Sagar Sule
+    </author>
     
     <!-- Either rename your prj startup html file to index.html or replace index.html below
          with the name of your project startup html file 
     -->
-    <content src="AP1000_small.html" />
+    <content src="AP1000_small.html"/>
     
     <!-- Uncomment and edit to specify a specific phonegap version 
          otherwise use PhoneGap Build will use the most recent version 
@@ -74,23 +76,29 @@
     <gap:plugin name="org.apache.cordova.statusbar"/>
     
 	<!-- Default app icon appearing on device homescreen -->    
-    <icon src="icon.png"/>
+    <icon src="www/icon.png"/>
 
 	<!-- Android app branding artwork -->
+    <icon gap:platform="android" gap:qualifier="ldpi" src="www/icon.png"/>
+    <icon gap:platform="android" gap:qualifier="mdpi" src="www/icon.png"/>
+    <icon gap:platform="android" gap:qualifier="hdpi" src="www/icon.png"/>
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/icon.png"/>
+    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="www/screen.png"/>
+    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="www/screen.png"/>
+    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="www/screen.png"/>
+    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="www/screen.png"/>
+
 
 	<!-- iOS app branding artwork -->
-    <icon gap:platform="ios" width="144" height="144" src="icon.png"/>
-    <!-- iPad -->
-	<icon src="icon.png" gap:platform="ios" width="76" height="76" />
-	<icon src="icon.png" gap:platform="ios" width="152" height="152" />
-
-    <!-- iPad -->
-	<gap:splash src="screen.png" gap:platform="ios" width="768" height="1024" />
-	<gap:splash src="screen.png" gap:platform="ios" width="1024" height="768" />
-
-	<!-- Retina iPad -->
-	<gap:splash src="screen.png" gap:platform="ios" width="1536" height="2048" />
-	<gap:splash src="screen.png" gap:platform="ios" width="2048" height="1536" />
+    <icon gap:platform="ios" width="57"  height="57"  src="www/images/icon-57.png"/>
+    <icon gap:platform="ios" width="72"  height="72"  src="www/images/icon-72.png"/>
+    <icon gap:platform="ios" width="114" height="114" src="www/images/icon-57-2x.png"/>
+    <icon gap:platform="ios" width="144" height="144" src="www/images/icon-72-2x.png"/>
+    <gap:splash gap:platform="ios" width="320"  height="480"  src="www/images/screen-iphone-portrait.png"/>
+    <gap:splash gap:platform="ios" width="640"  height="960"  src="www/images/screen-iphone-portrait-2x.png"/>
+    <gap:splash gap:platform="ios" width="640"  height="1136" src="www/images/screen-iphone-portrait-568h-2x.png"/>
+    <gap:splash gap:platform="ios" width="768"  height="1024" src="www/images/screen-ipad-portrait.png"/>
+    <gap:splash gap:platform="ios" width="1024" height="768"  src="www/images/screen-ipad-landscape.png"/>
 
 	<!-- Whitelist of urls this app may open in an InAppBrowser -->
     <access origin="*"/>
@@ -105,8 +113,5 @@
 	</gap:config-file>
 	-->
     <gap:platform name="ios"/>
-    <preference name="phonegap-version" value="3.6.3"/>
-    <preference name="deployment-target" value="7.0"/>
-    <gap:splash src="screen.png"/>
 	
 </widget>

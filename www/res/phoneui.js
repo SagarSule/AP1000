@@ -1,6 +1,6 @@
 /*
  *  MobiOne PhoneUI Framework
- *  version 2.6.5.20150116
+ *  version 2.6.4.20141126
  *  <http://genuitec.com/mobile/resources/phoneui>
  *  (c) Copyright 2010-2012 Genuitec, LLC
  *
@@ -1563,28 +1563,20 @@ $(document).ready(function() {
 		if (window['__tc_tel_handler']) {
 			__tc_tel_handler(number);
 		} else {
-			
-// commented out native dial impl as it does not work in ME build (ver 2.6.5)
 			if (phoneui.cordovaAvailable()) {
-				
-				//use InAppBrowser
-				//window.open("tel:" + number, "_system"); //begin dialing immediately, no dialog
-				window.open("tel:" + number, "_self"); //show dialing dialog
-		
-//				phoneui.cordova.exec(
-//						function(result) {
-//							if (result === "true")
-//							    phoneui.cordova.exec(null, null, "MobiOne", "dialPhone", [{"number":number,}]);
-//							else
-//								
-//								doHref("tel:" + number);
-//						},
-//						function(error) {
-//							doHref("tel:" + number);
-//						},
-//						"MobiOne",
-//						"useNativeDialPhone",
-//						[]);
+				phoneui.cordova.exec(
+						function(result) {
+							if (result === "true")
+							    phoneui.cordova.exec(null, null, "MobiOne", "dialPhone", [{"number":number,}]);
+							else
+								doHref("tel:" + number);
+						},
+						function(error) {
+							doHref("tel:" + number);
+						},
+						"MobiOne",
+						"useNativeDialPhone",
+						[]);
 			} else {
 				doHref("tel:" + number);
 			}
@@ -3018,7 +3010,7 @@ phoneui._extraPageInitializers = [];
 phoneui.version = {
 	major : 2,
 	minor : 6,
-	maintenance : 5,
+	maintenance : 4,
 	toString : function() {
 		return this.major + "." + this.minor + "." + this.maintenance;
 	}

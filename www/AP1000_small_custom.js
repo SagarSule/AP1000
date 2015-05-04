@@ -7,6 +7,8 @@
  */
 
 url = "http://192.168.1.20:8080/";
+videourl = "http://192.168.1.20:8081/";
+video = 0;
 Play = 0;
 var myVar;
 var myTurb;

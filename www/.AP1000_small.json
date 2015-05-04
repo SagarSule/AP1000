@@ -1,19 +1,15 @@
 {
  "uuid" : "08d5d4baf36d49eab09d73f9ea22b1ba", 
  "mainFile" : "AP1000_small.html", 
- "wholeFilesHash" : "Qq3qsUpCBPKdOxvU0CwBmwGbqUA=", 
+ "wholeFilesHash" : "Abng3JMJUoPnfkI3PORVH79r9rE=", 
  "files" : [
-  {"name" : "AP1000_small.css", "hash" : "d4WMl8rSVl1uLxy9aFCMB7Gh3Mw=", "generated" : true}, 
-  {"name" : "AP1000_small.html", "hash" : "J3JblybGbMaKo2O+jZHdshJ/KLk=", "generated" : true}, 
-  {"name" : "AP1000_small.js", "hash" : "9NICh/YzOhrWXfG33kCxzmkN/8Y=", "generated" : true}, 
-  {"name" : "AP1000_small_custom.js", "hash" : "E4LX22a7wDLS5+vps5hpM4ad7JE=", "generated" : false}, 
-  {"name" : "cache.manifest", "hash" : "ICQig1wjd8tSfMCkMd1hChlNKhs=", "generated" : true}, 
+  {"name" : "AP1000_small.css", "hash" : "wzEcxIfO4DdI7Y/5Geg0gl48ehU=", "generated" : true}, 
+  {"name" : "AP1000_small.html", "hash" : "mlAc25r4o0yjqeoLDyN+LHpqpRE=", "generated" : true}, 
+  {"name" : "AP1000_small.js", "hash" : "2k/UglvBrSVQWxYUxiszMx/hWmk=", "generated" : true}, 
+  {"name" : "AP1000_small_custom.js", "hash" : "AKdn9q6zc/EhZdp5vVKgIGduhKc=", "generated" : false}, 
+  {"name" : "cache.manifest", "hash" : "UTT52Z9wkUEkomA+cuXga79MHXk=", "generated" : true}, 
   {"name" : "images/background.png", "hash" : "TG7BYEEqzeINEWJ5XHT6XAngI50=", "generated" : true}, 
-  {"name" : "images/video1.png", "hash" : "Q+KzyyF4clkgC4ipmLUV0Kn08qw=", "generated" : true}, 
   {"name" : "images/video2.png", "hash" : "LX+oo88jAPa/4tWnOKbxyPr2dVQ=", "generated" : true}, 
-  {"name" : "images/video3.png", "hash" : "i+NIiZUzFDi1NaZy4T6LWCwSSMo=", "generated" : true}, 
-  {"name" : "images/video4.png", "hash" : "C1dqX49aPP25EJQlWL57Be9BgAU=", "generated" : true}, 
-  {"name" : "images/video5.png", "hash" : "uWO0KJC7fZF+5lmWowDIGPCdtmA=", "generated" : true}, 
   {"name" : "res/images/homescreenPrompt.png", "hash" : "P/v6kOtOHYAiWfpFo/d4S9TMfvs=", "generated" : true}, 
   {"name" : "res/images/icon.png", "hash" : "yKcxtO1SE721CyxkZl/OZslqLOQ=", "generated" : true}, 
   {"name" : "res/images/playVideoBtn.png", "hash" : "tuvZGLJg5t87YjTSyNTd5wysPXE=", "generated" : true}, 
@@ -32,12 +28,7 @@
   {"name" : "res/spinningwheel.js", "hash" : "PNik3of6paJa1rUePU49EtUJw4w=", "generated" : true}, 
   {"name" : "rte/cordova.js", "hash" : "sZatax2OK8V3fI115UhXxsg81O8=", "generated" : true}, 
   {"name" : "rte/readme.txt", "hash" : "ZZKxkkIw6YBm1lSag1cPT9O1mMo=", "generated" : true}, 
-  {"name" : "rte/rte.js", "hash" : "sZatax2OK8V3fI115UhXxsg81O8=", "generated" : true}, 
-  {"name" : "video/video1.mp4", "hash" : "2qfUvdjfXsCDOhH2GlwbCocoBsg=", "generated" : false}, 
-  {"name" : "video/video2.mp4", "hash" : "A84QsQTxffMc3EsH/R9R9lKPVag=", "generated" : false}, 
-  {"name" : "video/video3.mp4", "hash" : "slt+rFqwnPNP0+cZVheRE/Q9sNM=", "generated" : false}, 
-  {"name" : "video/video4.mp4", "hash" : "zFSxq0yfu0s+KnejtTBGTiIl86A=", "generated" : false}, 
-  {"name" : "video/video5.mp4", "hash" : "9FJQkN6C0wvPIHKLqhuiJu3mojM=", "generated" : false}
+  {"name" : "rte/rte.js", "hash" : "sZatax2OK8V3fI115UhXxsg81O8=", "generated" : true}
  ], 
  "networkUrls" : []
 }

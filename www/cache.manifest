@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# hash +sJsfFh7GJADeEivxH0KGQ54GFU=
+# hash OkmqYrIrC2Pd+rUKyQ1Um6vWyJk=
 # uuid 08d5d4baf36d49eab09d73f9ea22b1ba
 
 AP1000_small.css
@@ -7,11 +7,7 @@ AP1000_small.html
 AP1000_small.js
 AP1000_small_custom.js
 images/background.png
-images/video1.png
 images/video2.png
-images/video3.png
-images/video4.png
-images/video5.png
 res/images/homescreenPrompt.png
 res/images/icon.png
 res/images/playVideoBtn.png
@@ -31,10 +27,5 @@ res/spinningwheel.js
 rte/cordova.js
 rte/readme.txt
 rte/rte.js
-video/video1.mp4
-video/video2.mp4
-video/video3.mp4
-video/video4.mp4
-video/video5.mp4
 
 NETWORK:
