@@ -254,18 +254,6 @@ body{
   overflow: visible;
 }
 
-#m1-AP1000_small-play{
-  -webkit-border-radius: 4px;
-  border-top-color: transparent;
-  border-width: 1px 0px 0px 0px;
-  height: 100px;
-  left: 462px;
-  line-height: 100px;
-  text-align: center;
-  top: -454px;
-  width: 100px;
-}
-
 #m1-AP1000_small-back{
   -webkit-border-radius: 4px;
   border-top-color: transparent;
